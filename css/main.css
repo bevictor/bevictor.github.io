@@ -1,0 +1,12 @@
+/* 1. Base */
+html {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: "Cairo", sans-serif;
+    -moz-osx-font-smoothing:grayscale;
+    -webkit-font-smoothing:antialiased;
+    line-height: 1.5;
+    min-height:100vh;
+    min-width:300px;
+    overflow-x: hidden;
+}
