@@ -85,6 +85,12 @@ a {
     width: 100%;
     justify-content: center;
 }
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 150px;
+}
 /* 4. Responsiveness */
 @media screen and (max-width:799px) {
     .header-content {
