@@ -20,8 +20,33 @@ a {
 /* 3. Specific */
 .header-content {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+.nav-menu li {
+    display: inline-block;
+}
+.nav-menu li a {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.welcome-message {
+    font-size: 84px;
+}
+.about {
+    font-size: 28px;
+}
+.social li {
+    display: inline-block;
+}
+.contact {
+    display: inline-block;
+    vertical-align: top;
+}
+.button {
+    border-radius: 230896px;
+    border: 2px solid #000000;
+}
+.copyright-info {
+    text-align: center;
 }
 /* 4. Responsiveness */
 @media screen and (max-width:799px) {
@@ -29,5 +54,11 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (min-width:800px) {
+    .header-content {
+        align-items: center;
+        justify-content: space-between;
     }
 }
