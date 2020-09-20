@@ -64,12 +64,17 @@ a {
     transform: scale(1.25);
 }
 .contact {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
     vertical-align: top;
+    margin-top: 15px;
 }
 .button {
     border-radius: 230896px;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
+    padding: 10px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
+    margin-bottom: 15px;
 }
 .copyright-info {
     text-align: center;
