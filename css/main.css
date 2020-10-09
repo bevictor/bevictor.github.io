@@ -1,18 +1,21 @@
 /* 1. Base */
 html {
     background-color: #ffffff;
-    color: #000000;
-    font-family: "Cairo", sans-serif;
-    -moz-osx-font-smoothing:grayscale;
-    -webkit-font-smoothing:antialiased;
+    background-image: url(/images/plants.jpg);
+    background-position: center; /*important*/
+    background-size: cover;
+    color: #ffffff;
+    font-family: "Comfortaa", sans-serif;
+    left:0 ;
     line-height: 1.5;
     min-height:100vh;
     min-width:300px;
     overflow-x: hidden;
+    top: 0;
+    width: 100%;
 }
 body {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 30px;/*contentious*/
 }
 a {
     color: currentColor;
@@ -21,12 +24,16 @@ a {
 }
 .logo h1 {
     font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
 }
 /* 2. Shared */
 
 /* 3. Specific */
 .header-content {
     display: flex;
+    justify-content: space-between;
     margin-bottom:30px;
 }
 .nav-menu li {
@@ -36,15 +43,15 @@ a {
     margin-right: 5px;
 }
 .nav-menu li a {
-    text-decoration: underline;
+    border-bottom: 2px solid white;
     text-transform: uppercase;
 }
 .welcome-message {
-    font-size: 84px;
+    font-size: 9rem;
     margin-bottom: 15px;
 }
 .about {
-    font-size: 28px;
+    font-size: 2.5rem;
     margin-bottom: 15px;
 }
 .social li {
@@ -70,11 +77,13 @@ a {
     margin-top: 15px;
 }
 .button {
-    border-radius: 230896px;
-    border: 3px solid #000000;
+    border-radius: 10px;
+    border: 3px solid #ffffff;
     padding: 10px;
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.5);
     margin-bottom: 15px;
+}
+.button:hover {
+    transform: scale(1.1);
 }
 .copyright-info {
     text-align: center;
@@ -86,18 +95,17 @@ a {
     justify-content: center;
 }
 .footer-content {
-    position: fixed;
     width: 100%;
     bottom: 0;
     height: 40px;
 }
 /* 4. Responsiveness */
 @media screen and (max-width:799px) {
-    .header-content {
+   /* .header-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
+    }*/
 }
 @media screen and (min-width:800px) {
     .header-content {
