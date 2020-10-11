@@ -15,7 +15,8 @@ html {
     width: 100%;
 }
 body {
-    margin: 30px;/*contentious*/
+    margin: 10px;/*contentious*/
+    position: relative;
 }
 a {
     color: currentColor;
@@ -33,7 +34,6 @@ a {
 /* 3. Specific */
 .header-content {
     display: flex;
-    justify-content: space-between;
     margin-bottom:30px;
 }
 .nav-menu li {
@@ -47,7 +47,7 @@ a {
     text-transform: uppercase;
 }
 .welcome-message {
-    font-size: 9rem;
+    font-size: 7rem;
     margin-bottom: 15px;
 }
 .about,.work {
@@ -94,29 +94,46 @@ a {
 }
 .footer-content {
     align-items: center;
+    bottom: 0;
     flex-direction: column;
     justify-content: center;
     display: flex;
     margin-top: 30px;
+    position: absolute;
     width: 100%;
-    bottom: 0;
     height: 40px;
 }
 #gigs,#me {
     text-decoration: underline;
 }
+.main-content {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+}
+.hr {
+    margin-bottom: 20px;
+}
 /* 4. Responsiveness */
 @media screen and (max-width:799px) {
-   /* .header-content {
+   .header-content {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }*/
+    }
 }
 @media screen and (min-width:800px) {
     .header-content {
         align-items: center;
         justify-content: space-between;
+    }
+    dl {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+    dl div {
+        display: inline-block;
+        margin-right: 20px;
     }
 }
 /* for work pages */
@@ -126,4 +143,36 @@ a {
 .work-html {
     background-image: none;
     color: #000000;
+}
+.logo-work h1 {
+    font-weight: bold;
+    border: 2px solid #001900;
+    border-radius: 5px;
+    padding: 5px;
+}
+.nav-menu-work li a {
+    border-bottom: 2px solid #001900;
+    text-transform: uppercase;
+}
+.work-title {
+    text-decoration: underline #ff7400;
+}
+.description {
+    text-align: center;
+}
+dt {
+    font-weight: 1000;
+}
+.work-body {
+    position: relative;
+    text-align: ;
+}
+.screenshots {
+    margin-bottom: 15px;
+}
+.solutions {
+    margin-top: 20px;
+}
+.special-link {
+    text-decoration: underline #ff7400;
 }
