@@ -64,10 +64,8 @@ a {
     font-size: 1.5rem;
     height: 2rem;
     width: 2rem;
-    opacity: 0.5;
 }
 .social a:hover {
-    opacity: 1;
     transform: scale(1.25);
 }
 .contact {
@@ -120,4 +118,12 @@ a {
         align-items: center;
         justify-content: space-between;
     }
+}
+/* for work pages */
+.work-header-content {
+    color: #001900;
+}
+.work-html {
+    background-image: none;
+    color: #000000;
 }
