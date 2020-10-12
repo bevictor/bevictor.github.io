@@ -1,6 +1,7 @@
 /* 1. Base */
 html {
     background-color:#149414 ;
+    background-image: linear-gradient(to bottom right, #06c258,#07da63,#08f26e);
     background-image: url(/images/new-plants.jpg);
     background-position: center; /*important*/
     background-size: cover;
@@ -173,6 +174,9 @@ dt {
 }
 .solutions {
     margin-top: 20px;
+}
+.solutions h1,h2 {
+    text-decoration: underline;
 }
 .special-link {
     text-decoration: underline #ff7400;
