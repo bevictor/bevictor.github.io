@@ -175,7 +175,7 @@ dt {
 .solutions {
     margin-top: 20px;
 }
-.solutions h1,h2 {
+.solutions h1,.solutions h2 {
     text-decoration: underline;
 }
 .special-link {
