@@ -6,7 +6,6 @@
 }
 /* base */
 :root {
-    border: 2px green solid;
     font-family: 'Poppins','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 16px;
     line-height: 1.4;
@@ -16,7 +15,6 @@
     scroll-behavior: smooth;
 }
 body {
-    border: 2px solid red;
     min-height: 100vh; /*contentious*/
     position: relative;
     
