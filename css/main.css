@@ -28,6 +28,11 @@ ul {
 .hidden {
     display: none;
 }
+a {
+    color: currentColor;
+    cursor: pointer;
+    text-decoration: none;
+}
 /* header */
 header {
     background-image: linear-gradient(to right,#276174,#33c58e,#63fd88);
@@ -57,4 +62,34 @@ nav ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+nav ul li {
+    margin-top: 2px;
+}
+button {
+    background-color:#dde1e7;
+    border:none;
+    border-radius:15px;
+    box-shadow:2px 2px 5px #babecc,-5px -5px 10px #ffffff73;
+    color:#000;
+    cursor:pointer;
+    font-size:1rem;
+    font-weight:600;
+    height:50px;
+    letter-spacing: 0.1ch;
+    margin:15px 0;
+    outline:none;
+    padding:10px;
+}
+button a {
+    background-clip: texts;
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to right,#276174,#33c58e,#63fd88);
+    color: transparent;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 1s linear;
+    transition-property: all;
 }
