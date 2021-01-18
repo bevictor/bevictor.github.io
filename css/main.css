@@ -85,11 +85,26 @@ button a {
     background-clip: texts;
     -moz-background-clip: text;
     -webkit-background-clip: text;
-    background-image: linear-gradient(to right,#276174,#33c58e,#63fd88);
+    background-image: linear-gradient(to right,#276174,#33c58e);
     color: transparent;
 }
 button:hover {
     transform: scale(1.1);
     transition: 1s linear;
     transition-property: all;
+}
+.service-card {
+    /* background: red; */
+    border-radius: 20px;
+    box-shadow:2px 2px 5px #242528,-5px -5px 10px #ffffff73;
+    height: 220px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+    width: 300px;
+}
+.services {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
 }
