@@ -110,3 +110,6 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
+.fab,.fas,.far {
+    font-size: 3rem;
+}
