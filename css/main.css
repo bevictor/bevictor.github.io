@@ -1,6 +1,8 @@
 /* default values */
 *,*::before,*::after {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 :root {
     /* background-color: #222222; */
@@ -19,31 +21,32 @@ a {
     text-decoration: none;
 }
 /* main sections */
-.intro {
+.intro,.skills,.work {
     align-items: center;
-    background-color:#222222;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+.intro {
+    background-color:#222222;
     height: 100%;
 }
-.two {
+.skills {
     background-color: blue;
     height: 100%;
 }
-.three {
+.work {
     background-color: green;
     height: 100%;
 }
 /* other */
-.welcome-message {
-    /* border: 2px solid red; */
+.welcome-message,.skills-message,.work-message {
     font-size: 2rem;
     letter-spacing: .1rem;
     padding: 10px;
     text-align: center;
 }
-.welcome-message span {
+span {
     font-size: 1rem;
 }
 button {
