@@ -1,0 +1,54 @@
+/* default values */
+*,*::before,*::after {
+    box-sizing: border-box;
+}
+:root {
+    /* background-color: #222222; */
+    color: #ffffff;
+    font-size: 16px;
+    height: 100%;
+    line-height: 1.4;
+    min-height: 100vh;
+    min-width: 300px;
+}
+body {
+    height: 100%;
+}
+a {
+    color: currentColor;
+    text-decoration: none;
+}
+/* main sections */
+.intro {
+    align-items: center;
+    background-color:#222222;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+.two {
+    background-color: blue;
+    height: 100%;
+}
+.three {
+    background-color: green;
+    height: 100%;
+}
+/* other */
+.welcome-message {
+    /* border: 2px solid red; */
+    font-size: 2rem;
+    letter-spacing: .1rem;
+    padding: 10px;
+    text-align: center;
+}
+.welcome-message span {
+    font-size: 1rem;
+}
+button {
+    border: none;
+    border-radius: 5px;
+    letter-spacing: .05rem;
+    padding: 10px;
+}
