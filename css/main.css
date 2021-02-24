@@ -39,8 +39,16 @@ a {
     background-color: green;
     height: 100%;
 }
+.about {
+    background-color: red;
+    height: 100%;
+}
+.contact {
+    background-color: yellow;
+    height: 100%;
+}
 /* other */
-.welcome-message,.skills-message,.work-message {
+.welcome-message,.skills-message,.work-message,.about-message,.contact-message {
     font-size: 2rem;
     letter-spacing: .1rem;
     padding: 10px;
