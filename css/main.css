@@ -1,65 +1,85 @@
-/* default values */
 *,*::before,*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-:root {
-    /* background-color: #222222; */
-    color: #ffffff;
+html {
+    font-family: Fira Code;
     font-size: 16px;
-    height: 100%;
-    line-height: 1.4;
-    min-height: 100vh;
-    min-width: 300px;
 }
 body {
-    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    min-height: 100vh;
+}
+h1 {
+    font-size: 3rem;
+    
+}
+h2 {
+    font-size: 2rem;
+}
+h1,h2 {
+    font-family: Fira Code;
+    font-weight: 400;
+    text-align: center;
+}
+ul {
+    list-style-type: none;
+    margin-top: 15px;
+}
+li {
+    display: inline-block;
+    margin-right: 15px;
 }
 a {
     color: currentColor;
     text-decoration: none;
 }
-/* main sections */
-.intro,.skills,.work {
+div {
     align-items: center;
+    background-image: linear-gradient(to right, #5d69be,#c89feb);
+    border-radius: 15px;
+    /* box-shadow: 5px 5px 5px 5px gray; */
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-.intro {
-    background-color:#222222;
-    height: 100%;
-}
-.skills {
-    background-color: blue;
-    height: 100%;
-}
-.work {
-    background-color: green;
-    height: 100%;
-}
-.about {
-    background-color: red;
-    height: 100%;
-}
-.contact {
-    background-color: yellow;
-    height: 100%;
-}
-/* other */
-.welcome-message,.skills-message,.work-message,.about-message,.contact-message {
-    font-size: 2rem;
-    letter-spacing: .1rem;
-    padding: 10px;
-    text-align: center;
-}
-span {
-    font-size: 1rem;
+    min-width: 320px;
+    padding: 30px;
 }
 button {
-    border: none;
+    border-style: none;
     border-radius: 5px;
-    letter-spacing: .05rem;
-    padding: 10px;
+    font-family: Fira Code;
+    font-weight: 600;
+    margin-top: 15px;
+    padding: 5px;
+}
+.twitter-link {
+    background-color: #1da1f2;
+}
+.github-link {
+    background-color: #211f1f;
+}
+.twitter-link,.github-link {
+    color: white;
+    border-radius: 5px;
+    letter-spacing: .2ch;
+    padding: 5px;
+}
+div:hover {
+    background-image: linear-gradient(to right,#c89feb,#5d69be);
+}
+.email-link {
+    color: red;
+}
+.phone-link {
+    color: #059142;
+}
+@media (min-width:425px) {
+    .phone-link {
+        display: none;
+    }
 }
