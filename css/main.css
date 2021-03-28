@@ -5,11 +5,12 @@
 }
 html {
     color: #212121;
+    font-family: "Nunito",s;
     font-size: 16px;
 }
 body {
     background-color: #ffc619;
-    margin: 10px 20px;
+    margin: 0px 20px;
     min-height: 100vh;
     min-width: 150px; /* revisit*/
     overflow-x: hidden;
@@ -20,10 +21,62 @@ ul {
 a {
     text-decoration: none;
 }
-.navigation {
+/* .navigation {
     display: none;
-}
+} */
 .main-header {
+    align-items: center;
+    background-color: #10a5f5;
+    color: #fff;
     display: flex;
+    height: 50px;
     justify-content: space-between;
+    padding: 10px;
+}
+.intro {
+    text-align: center;
+}
+.intro {
+    font-size: 1.8rem;
+    margin-top: 30%;
+}
+/* about page */
+.about-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+img {
+    height: auto;
+    width: 100%;
+}
+nav a {
+    color: #fff;
+}
+/* skills page */
+.skill {
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.skill-container {
+    display: flex;
+    flex-direction: column;
+}
+.name {
+    background-color: #10a5f5;
+    border-radius: 10px;
+    color: #fff;
+    display: inline-block;
+    font-family: "Bubblegum Sans";
+    /* outline: none; */
+    padding: 10px;
+}
+.skill-title,.project-title {
+    background-color: #10a5f5;
+    border-radius: 5px;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
 }
