@@ -1,6 +1,6 @@
-const hamburger = document.querySelector('.hamburger-icon');
-const navItems = document.querySelector('#nav');
+const menuIcon = document.querySelector('.hamburger-icon');
+const navMenu = document.querySelector('.navigation');
 
-hamburger.addEventListener('click',() => {
-    navItems.classList.toggle('hidden');
+menuIcon.addEventListener('click',() => {
+    navMenu.classList.toggle('navigation');
 })

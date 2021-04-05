@@ -21,22 +21,6 @@ ul {
 a {
     text-decoration: none;
 }
-.nav-items {
-    align-items: center;
-    background-color: #10a5f5;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    left: 0;
-    position: fixed;
-    text-align: center;
-    top: 0;
-    width: 100%;
-}
-.hidden {
-    visibility: hidden;
-}
 .main-header {
     align-items: center;
     background-color: #10a5f5;
@@ -47,27 +31,48 @@ a {
     padding: 10px;
 }
 .intro {
-    text-align: center;
-}
-.intro {
     font-size: 1.8rem;
     margin-top: 30%;
+    text-align: center;
+}
+.navigation {
+    display: none;
+}
+.nav-items {
+    align-items: center;
+    background-color: #10a5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 /* about page */
 .about-container {
     align-items: center;
     display: flex;
     flex-direction: column;
+    margin-top: 30px;
     text-align: center;
+}
+.portrait {
+    height: 250px;
+    width: 250px;
 }
 img {
     height: auto;
     width: 100%;
 }
+.about-me {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-top: 30px;
+}
 nav a {
     color: #fff;
 }
 /* skills page */
+.skills {
+    margin-top: 30px;
+}
 .skill {
     /* align-items: center; */
     display: flex;
@@ -91,5 +96,7 @@ nav a {
     border-radius: 5px;
     color: #fff;
     display: inline-block;
+    margin-top: 15px;
     padding: 5px;
 }
+/* projects page */
