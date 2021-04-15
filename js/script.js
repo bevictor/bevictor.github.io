@@ -1,4 +1,4 @@
-const menuIcon = document.querySelector('.hamburger-icon');
+const menuIcon = document.querySelector('.nav-icon');
 const navMenu = document.querySelector('.navigation');
 
 menuIcon.addEventListener('click',() => {

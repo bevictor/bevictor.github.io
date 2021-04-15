@@ -1,102 +1,147 @@
+/* universal styles */
 *,*::before,*::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-html {
-    color: #212121;
-    font-family: "Nunito",s;
-    font-size: 16px;
+:root {
+    --accent-color:#10a5f5;
+    --base-color:#ffc619;
+    --dark-color:#212121;
+    --light-color:#ffffff;
+    color: var(--dark-color);
+    font-family: "Nunito",sans-serif;
+    font-size: 1rem;
+    /* possibly add more universal styles */
 }
 body {
-    background-color: #ffc619;
-    margin: 0px 20px;
+    background-color: var(--base-color);
     min-height: 100vh;
     min-width: 150px; /* revisit*/
-    overflow-x: hidden;
+    overflow-x: hidden; /*prevents horizontal scrolling*/
+    /* the question on creating another container as a child div of body */
 }
 ul {
     list-style-type: none;
 }
 a {
+    /* revisit */
     text-decoration: none;
 }
+img {
+    height: auto;
+    width: 100%;
+}
+/* homepage - some styles may apply to other pages */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+.header-container {
+    position: sticky;
+    top: 0;
+}
 .main-header {
+    /* add dynamic styles here */
     align-items: center;
-    background-color: #10a5f5;
-    color: #fff;
+    background-color: var(--accent-color);
+    color: var(--light-color);
     display: flex;
     height: 50px;
     justify-content: space-between;
     padding: 10px;
 }
-.intro {
-    font-size: 1.8rem;
-    margin-top: 30%;
+.nav-icon {
+    cursor: pointer;
+}
+.content-container {
+    margin: 0px 20px;
+    /* text-align: center; */
+}
+.welcome-message {
+    font-size: 1.5rem;
     text-align: center;
+}
+.name {
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    color: var(--light-color);
+    display: inline-block;
+    font-family: "Bubblegum Sans";
+    /* outline: none; */
+    padding: 10px;
+}
+footer {
+    align-items: center;
+    background-color: var(--accent-color);
+    color: var(--light-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+}
+footer a {
+    color: currentColor;
+    text-decoration: none;
+}
+footer i {
+    font-size: 1.2rem;
+    margin-right: 5px;
+}
+.logo,.nav-items {
+    font-weight: 600;
+    letter-spacing: .2ch;
 }
 .navigation {
     display: none;
 }
 .nav-items {
     align-items: center;
-    background-color: #10a5f5;
+    background-color: var(--accent-color);
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
-/* about page */
-.about-container {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    text-align: center;
+nav a {
+    color: var(--light-color);
 }
-.portrait {
+/* about page */
+.main-image{
     height: 250px;
+    margin: 0 auto;
     width: 250px;
 }
-img {
-    height: auto;
-    width: 100%;
+.top-margin {
+    margin-top: 20px; /*revisit class name and function*/
 }
-.about-me {
+.about {
+    /* revisit */
     font-size: 1.2rem;
     line-height: 1.6;
     margin-top: 30px;
 }
-nav a {
-    color: #fff;
-}
-/* skills page */
-.skills {
+/* services page */
+/* h2 {
     margin-top: 30px;
+} */
+/* new code */
+.service,.project {
+    margin-top: 20px;
 }
-.skill {
-    /* align-items: center; */
-    display: flex;
-    flex-direction: column;
-}
-.skill-container {
-    display: flex;
-    flex-direction: column;
-}
-.name {
-    background-color: #10a5f5;
-    border-radius: 10px;
-    color: #fff;
-    display: inline-block;
-    font-family: "Bubblegum Sans";
-    /* outline: none; */
-    padding: 10px;
-}
-.skill-title,.project-title {
-    background-color: #10a5f5;
+.service-name,.project-name {
+    background-color: var(--accent-color);
     border-radius: 5px;
-    color: #fff;
+    color: var(--light-color);
     display: inline-block;
-    margin-top: 15px;
     padding: 5px;
 }
+/* .service-description {} */
+.service-image,.project-image {
+    /* background-color: red; */
+    height: 180px;
+    width: 250px;
+}
+
 /* projects page */
