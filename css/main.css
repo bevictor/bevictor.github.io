@@ -188,3 +188,33 @@ form button {
     display: inline-block;
     padding: 5px;
 }
+/* responsiveness */
+@media(min-width:768px) {
+    .nav-icon {
+        display: none;
+    }
+    .navigation {
+        display: block;
+    }
+    .nav-items {
+        flex-direction: row;
+    }
+    .header-container {
+        align-items: center;
+        background-color: var(--accent-color);
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-items li {
+        margin-right: 15px;
+    }
+    .welcome-message {
+        font-size: 2rem;
+    }
+    .about,.service-description,.service-name,.project-name,.project-description,.project-link,.contact-content {
+        font-size: 1.5rem;
+    }
+    .content-container {
+        margin: 0 100px; /*contentious*/
+    }
+}
