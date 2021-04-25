@@ -12,13 +12,13 @@
     color: var(--dark-color);
     font-family: "Nunito",sans-serif;
     font-size: 1rem;
-    /* possibly add more universal styles */
+    /* TODO:possibly add more universal styles */
 }
 body {
     background-color: var(--base-color);
     min-height: 100vh;
-    min-width: 150px; /* revisit*/
-    overflow-x: hidden; /*prevents horizontal scrolling*/
+    min-width: 150px; /*revisit*/
+    overflow-x: hidden;
     /* the question on creating another container as a child div of body */
 }
 ul {
@@ -42,6 +42,7 @@ img {
 .header-container {
     position: sticky;
     top: 0;
+    z-index: 3;
 }
 .main-header {
     /* add dynamic styles here */
@@ -217,4 +218,19 @@ form button {
     .content-container {
         margin: 0 100px; /*contentious*/
     }
+}
+/* swup */
+.transition-fade {
+    opacity: 1;
+    transition: 500ms; /*needs refining*/
+    transform: translateX(0);
+    transform-origin: left;
+}
+html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+}
+html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
 }
